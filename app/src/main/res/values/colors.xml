@@ -1,0 +1,20 @@
+<resources>
+
+    <color name="scu__defaultBackground">#e5e5e5</color>
+    <color name="scu__defaultMianTitle">#ff53c1b6</color>
+    <color name="scu__defaultSubHead">#fff7f6f4</color>
+    <color name="scu__defaultBtnPressed">#ff55b7ad</color>
+    <color name="scu__defaultSubHeadText">#ffb5b6b6</color>
+    
+    <color name="scu__defaultCourseYelText">#ffff933e</color>
+    <color name="scu__defaultCourseXXText">#ff74b8e5</color>
+    <color name="scu__defaultCourseDevider">#ffc9c9c9</color>
+    
+    <color name="white">#ffffffff</color>
+    
+    <color name="md__transparent">#00000000</color>
+    <color name="md__defaultBackground">#FF555555</color>
+    
+    
+    
+</resources>

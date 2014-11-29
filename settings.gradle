@@ -1,1 +1,3 @@
-include ':app'
+include ':app', ':jsoup-1.7.2'
+include ':lib-menudrawer'
+include ':lib-viewpager'

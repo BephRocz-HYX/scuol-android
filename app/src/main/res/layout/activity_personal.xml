@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scu__defaultBackground"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/scu_main_MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/scu__defaultMianTitle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/Btn_Personal_Back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/btn_main_head"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_back"
+                    android:gravity="center_vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_Personal_Title"
+                    style="@style/TitleBarText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_main_personal"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/Btn_Personal_Refresh"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/btn_main_head"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_refresh"
+                    android:gravity="center_vertical|center_horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:id="@+id/View_Personal_Banner"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/bg_personal_banner2"
+	            android:gravity="center_vertical|center_horizontal"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical|center_horizontal" >
+	
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/ic_personal_banner_head"
+	                    android:orientation="vertical" >
+	
+	                </LinearLayout>
+	
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="match_parent"
+	                    android:gravity="left|center_vertical"
+	                    android:layout_marginLeft="14dp"
+	                    android:orientation="vertical" >
+	                    
+	                    <TextView
+	                        android:id="@+id/Text_Personal_Name"
+	                        style="@style/PersonalBannerText"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginBottom="2dp"
+	                        android:text="同学，你好" />
+	                    
+	                    <TextView
+	                        android:id="@+id/Text_Personal_Number"
+	                        style="@style/PersonalBannerText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:text="学号： " />
+	                    
+	                </LinearLayout>
+	
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="80dp"
+	            android:background="@color/white"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="10"
+	                android:gravity="center_vertical|center_horizontal"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal" >
+	                    
+	                    <TextView
+	                        android:id="@+id/Text_Personal_Days"
+		                    style="@style/PersonalBannerDownNumText"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="6dp"
+		                    android:gravity="center_horizontal"
+		                    android:text="0"
+		                    android:textColor="#ff53c1b6" />
+	                    
+	                    <TextView
+		                    style="@style/PersonalBannerDownNumText"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="6dp"
+		                    android:gravity="center_horizontal"
+		                    android:text="天"
+		                    android:textSize="14sp"
+		                    android:textColor="#ff53c1b6" />
+	                    
+	                </LinearLayout>
+	                
+	                <TextView
+	                    style="@style/PersonalBannerDownIntroText"
+	                    android:layout_width="80dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="2dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="大学已过去" />
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/bg_personal_banner_down_rule"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="10"
+	                android:gravity="center_vertical|center_horizontal"
+	                android:orientation="vertical" >
+	                
+	                <TextView
+	                    android:id="@+id/Text_Personal_Percent"
+	                    style="@style/PersonalBannerDownNumText"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="6dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="0%"
+	                    android:textColor="#ffeb595a" />
+	                
+	                <TextView
+	                    style="@style/PersonalBannerDownIntroText"
+	                    android:layout_width="80dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="2dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="方案完成度" />
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/bg_personal_banner_down_rule"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="10"
+	                android:gravity="center_vertical|center_horizontal"
+	                android:orientation="vertical" >
+	                
+	                <TextView
+	                    android:id="@+id/Text_Personal_Score"
+	                    style="@style/PersonalBannerDownNumText"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="6dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="0"
+	                    android:textColor="#ffff933e" />
+	                
+	                <TextView
+	                    style="@style/PersonalBannerDownIntroText"
+	                    android:layout_width="80dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="2dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="必修平均分" />
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/bg_personal_banner_down_rule"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="10"
+	                android:gravity="center_horizontal|center_vertical"
+	                android:orientation="vertical" >
+	                
+	                <TextView
+	                    android:id="@+id/Text_Personal_Credit"
+	                    style="@style/PersonalBannerDownNumText"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="6dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="0"
+	                    android:textColor="#ff4f7d9f" />
+	                
+	                <TextView
+	                    style="@style/PersonalBannerDownIntroText"
+	                    android:layout_width="80dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="2dp"
+	                    android:gravity="center_horizontal"
+	                    android:text="平均绩点" />
+	                
+	            </LinearLayout>
+
+	        </LinearLayout>
+	        
+	        <View
+	    	    style="@style/PageHeaderShadow"
+	    	    android:layout_width="match_parent" />
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="12dp"
+	                android:layout_marginLeft="16dp"
+	                android:layout_marginRight="16dp"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:id="@+id/Btn_Personal_Roll"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="54dp"
+	                    android:background="@drawable/btn_personal_list_top"
+	                    android:clickable="true"
+	                    android:gravity="center_vertical|center_horizontal"
+	                    android:orientation="vertical" >
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center_vertical"
+	                        android:orientation="horizontal" >
+
+	                        <ImageView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="30dp"
+	                            android:src="@drawable/ic_personal_list_1" />
+	                        
+	                        <TextView
+			                    style="@style/PersonalListText"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginLeft="12dp"
+			                    android:gravity="center_horizontal"
+			                    android:text="学籍信息" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:gravity="right" >
+
+	                            <ImageView
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginRight="20dp"
+	                                android:src="@drawable/ic_personal_list_right" />
+
+	                        </LinearLayout>
+
+	                    </LinearLayout>
+
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="1px"
+	                    android:orientation="vertical" >
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/Btn_Personal_Plan"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="54dp"
+	                    android:background="@drawable/btn_personal_list_mid"
+	                    android:clickable="true"
+	                    android:gravity="center_vertical|center_horizontal"
+	                    android:orientation="vertical" >
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center_vertical"
+	                        android:orientation="horizontal" >
+
+	                        <ImageView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="30dp"
+	                            android:src="@drawable/ic_personal_list_2" />
+
+	                        <TextView
+	                            style="@style/PersonalListText"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="12dp"
+	                            android:gravity="center_horizontal"
+	                            android:text="培养方案" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:gravity="right" >
+
+	                            <ImageView
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginRight="20dp"
+	                                android:src="@drawable/ic_personal_list_right" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="1px"
+	                    android:orientation="vertical" >
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/Btn_Personal_Passwd"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="54dp"
+	                    android:background="@drawable/btn_personal_list_mid"
+	                    android:clickable="true"
+	                    android:gravity="center_vertical|center_horizontal"
+	                    android:orientation="vertical" >
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center_vertical"
+	                        android:orientation="horizontal" >
+
+	                        <ImageView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="30dp"
+	                            android:src="@drawable/ic_personal_list_3" />
+
+	                        <TextView
+	                            style="@style/PersonalListText"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="12dp"
+	                            android:gravity="center_horizontal"
+	                            android:text="密码修改" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:gravity="right" >
+
+	                            <ImageView
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginRight="20dp"
+	                                android:src="@drawable/ic_personal_list_right" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="1px"
+	                    android:orientation="vertical" >
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/Btn_Personal_Check"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="54dp"
+	                    android:background="@drawable/btn_personal_list_down"
+	                    android:clickable="true"
+	                    android:gravity="center_vertical|center_horizontal"
+	                    android:orientation="vertical" >
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center_vertical"
+	                        android:orientation="horizontal" >
+
+	                        <ImageView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="30dp"
+	                            android:src="@drawable/ic_personal_list_4" />
+
+	                        <TextView
+	                            style="@style/PersonalListText"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_marginLeft="12dp"
+	                            android:gravity="center_horizontal"
+	                            android:text="审查体系" />
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:gravity="right" >
+
+	                            <ImageView
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginRight="20dp"
+	                                android:src="@drawable/ic_personal_list_right" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+
+	                </LinearLayout>
+
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scu__defaultBackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/scu_main_MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/scu__defaultMianTitle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/Btn_Main_Menu"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/btn_main_head"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_overflow"
+                    android:gravity="center_vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Text_Main_Title"
+                    style="@style/TitleBarText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/Btn_Main_Refresh"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/btn_main_head"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_action_share"
+                    android:gravity="center_vertical|center_horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/scu_main_SubHead"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/scu__defaultSubHead" 
+        android:gravity="center_vertical" >
+        
+        <TextView
+            android:id="@+id/scu_main_TextDate"
+            style="@style/SubHeadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:text="2013年6月30日 星期日" />
+
+        <TextView
+            android:id="@+id/scu_main_TextWeeks"
+            style="@style/SubHeadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="12dp"
+            android:text="第19教学周" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    
+    	<View
+    	    style="@style/PageHeaderShadow"
+    	    android:layout_width="match_parent" />
+    	
+    	<ScrollView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+    	
+	    	<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:paddingLeft="6dp"
+	            android:paddingRight="6dp"
+	            android:paddingTop="2dp" >
+	            
+	    	    <LinearLayout
+	    	        android:layout_width="match_parent"
+	    	        android:layout_height="140dp"
+	    	        android:layout_marginBottom="1dp"
+	    	        android:orientation="horizontal" >
+	                
+	    	        <LinearLayout
+	                    android:id="@+id/Btn_Main_Func_1"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1.0"
+	                    android:background="@drawable/btn_main_function"
+	                    android:clickable="true"
+	                    android:orientation="vertical" 
+	                    android:layout_marginRight="2dp" >
+	                    
+	    	            <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="18dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:src="@drawable/ic_btn_main_func_news" />
+
+	                    <TextView
+	                        style="@style/BtnMainFuncText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:text="新闻动态" />
+	                    
+	    	        </LinearLayout>
+	    	        
+	    	        <LinearLayout
+	                    android:id="@+id/Btn_Main_Func_2"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1.0"
+	                    android:background="@drawable/btn_main_function"
+	                    android:clickable="true"
+	                    android:orientation="vertical" 
+	                    android:layout_marginLeft="2dp" >
+	                    
+	    	            <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="18dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:src="@drawable/ic_btn_main_func_course" />
+
+	                    <TextView
+	                        style="@style/BtnMainFuncText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:text="课表查看" />
+	                    
+	    	        </LinearLayout>
+	     
+	            </LinearLayout>
+	            
+	    	    <LinearLayout 
+	                android:layout_width="match_parent" 
+	                android:layout_height="140dp"
+	                android:layout_marginBottom="1dp"
+	                android:orientation="horizontal" >
+	    	        
+	    	        <LinearLayout
+	                    android:id="@+id/Btn_Main_Func_3"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1.0"
+	                    android:background="@drawable/btn_main_function"
+	                    android:clickable="true"
+	                    android:orientation="vertical" 
+	                    android:layout_marginRight="2dp" >
+	                    
+	    	            <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="18dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:src="@drawable/ic_btn_main_func_exam" />
+
+	                    <TextView
+	                        style="@style/BtnMainFuncText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:text="考试信息" />
+	                    
+	    	        </LinearLayout>
+	    	        
+	    	        <LinearLayout
+	                    android:id="@+id/Btn_Main_Func_4"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1.0"
+	                    android:background="@drawable/btn_main_function"
+	                    android:clickable="true"
+	                    android:orientation="vertical" 
+	                    android:layout_marginLeft="2dp" >
+	                    
+	    	            <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="18dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:src="@drawable/ic_btn_main_func_grade" />
+
+	                    <TextView
+	                        style="@style/BtnMainFuncText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:text="成绩绩点" />
+	                    
+	    	        </LinearLayout>
+	
+	            </LinearLayout>
+	            
+	    	    <LinearLayout 
+	                android:layout_width="match_parent" 
+	                android:layout_height="140dp"
+	                
+	                android:orientation="horizontal" >
+	    	        
+	    	        <LinearLayout
+	                    android:id="@+id/Btn_Main_Func_5"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1.0"
+	                    android:background="@drawable/btn_main_function"
+	                    android:clickable="true"
+	                    android:orientation="vertical" 
+	                    android:layout_marginRight="2dp" >
+	                    
+	    	            <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="18dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:src="@drawable/ic_btn_main_func_rate" />
+
+	                    <TextView
+	                        style="@style/BtnMainFuncText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:text="教学评估" />
+	                    
+	    	        </LinearLayout>
+	    	        
+	    	        <LinearLayout
+	                    android:id="@+id/Btn_Main_Func_6"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_weight="1.0"
+	                    android:background="@drawable/btn_main_function"
+	                    android:clickable="true"
+	                    android:orientation="vertical" 
+	                    android:layout_marginLeft="2dp" >
+	                    
+	    	            <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginTop="18dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:src="@drawable/ic_btn_main_func_search" />
+
+	                    <TextView
+	                        style="@style/BtnMainFuncText"
+	                        android:layout_height="wrap_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_marginTop="2dp"
+	                        android:layout_gravity="center_horizontal"
+	                        android:text="综合查询" />
+	                    
+	    	        </LinearLayout>
+	
+	            </LinearLayout>
+	        
+	    	</LinearLayout>
+	    	
+	    </ScrollView>
+    
+    </LinearLayout>
+
+</LinearLayout>

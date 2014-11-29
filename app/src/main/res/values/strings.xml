@@ -1,3 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Scuol</string>
+
+    <string name="app_name">四川大学教务系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_main_home">四川大学教务系统</string>
+    <string name="menu_main_personal">个人信息</string>
+    <string name="menu_main_message">消息</string>
+    <string name="menu_main_options">选项</string>
+    <string name="menu_main_feedback">反馈</string>
+    <string name="menu_main_update">更新</string>
+    <string name="menu_main_about">关于</string>
+    <string name="menu_main_logout">注销</string>
+    <string name="menu_main_exit">退出</string>
+    <string name="menu_main_fuse">常用</string>
+    <string name="menu_main_operation">操作</string>
+    <string name="menu_main_system">系统</string>
+    <string name="loading_tip">加载中...</string>
+    <string name="title_activity_login">SCU</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="login_input_usr">请输入学号</string>
+    <string name="login_input_pswd">请输入密码</string>
+    <string name="login_input_login">登        录</string>
+    <string name="login_input_savepswd">记住账号</string>
+    <string name="login_input_autologin">自动登录</string>
+    
+    <string name="personal_roll_title">学籍信息</string>
+    <string name="personal_change_passwd_title">修改密码</string>
+    <string name="personal_change_passwd_oldpasswd">原始密码:</string>
+    <string name="personal_change_passwd_newpasswd1">新设密码:</string>
+    <string name="personal_change_passwd_newpasswd2">确认密码:</string>
+    <string name="personal_change_passwd_submit">提  交</string>
+
 </resources>

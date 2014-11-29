@@ -1,7 +1,36 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nsmss.scuol">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nsmss.scuol"
+    android:versionCode="1"
+    android:versionName="0.1.0" >
 
-    <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@drawable/ic_launcher" android:theme="@style/AppTheme">
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+
+        <activity android:name="com.nsmss.scuol.start.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.nsmss.scuol.login.LoginActivity"></activity>
+        <activity android:name="com.nsmss.scuol.main.MainActivity"></activity>
+        <activity android:name="com.nsmss.scuol.personal.PersonalActivity"></activity>
+        <activity android:name="com.nsmss.scuol.personal.RollActivity"></activity>
+        <activity android:name="com.nsmss.scuol.personal.PlanActivity"></activity>
+        <activity android:name="com.nsmss.scuol.course.CourseActivity"></activity>
+        <activity android:name="com.nsmss.scuol.grade.GradeActivity"></activity>
+        <activity android:name="com.nsmss.scuol.exam.ExamActivity"></activity>
+        <activity android:name=".personal.ChangePasswordActivity"></activity>
 
     </application>
 
