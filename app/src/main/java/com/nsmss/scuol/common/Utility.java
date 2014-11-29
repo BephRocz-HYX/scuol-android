@@ -14,7 +14,7 @@ public class Utility {
 	
 	/**
 	 * 计算当前教学周
-	 * @param dateStart 开学的日期
+	 * @param termBegin 开学的日期
 	 * @return 
 	 */
 	@SuppressLint("SimpleDateFormat")

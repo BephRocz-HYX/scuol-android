@@ -537,7 +537,7 @@ public class NetHelper {
 	/**
 	 * 获取考试信息
 	 * 
-	 * @param uData用户数据
+	 * @param uData 用户数据
 	 * @return SESSION
 	 */
 	public ArrayList<Map<String, String>> examInfo(UserData uData)
