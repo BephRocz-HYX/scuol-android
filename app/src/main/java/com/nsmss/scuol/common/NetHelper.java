@@ -67,7 +67,7 @@ public class NetHelper {
 			{
 				Iterator<Entry<String, String>> ite = response.cookies().entrySet().iterator();
 				while(ite.hasNext()){
-					Map.Entry<String, String> entry = ite.next();
+					Entry<String, String> entry = ite.next();
 					String key = entry.getKey();
 					String value = entry.getValue();
 					if (key.equals("JSESSIONID"))
