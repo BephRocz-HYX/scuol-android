@@ -8,4 +8,4 @@ SCU Educational Administration System Client
 - Download or clone the code and **IMPORT** them into **[Android Studio]** 
   ( NOT for Android Developer Tools or Eclipse ! )
 
-[Android Studio]:https://developer.android.com/sdk/installing/studio.html
+[Android Studio]:http://tools.android.com/download/studio/canary/latest
