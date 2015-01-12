@@ -7,7 +7,7 @@ SCU Educational Administration System Client
 
 #### Android
 
-- Download or clone the code and **IMPORT** them into **[Android Studio]**
+- Download or clone the code and **import** into **[Android Studio]**
   ( NOT for Android Developer Tools or Eclipse ! )
   
 - 下载代码并导入到 最新版的 **[Android Studio]**
